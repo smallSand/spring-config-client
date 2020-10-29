@@ -1,0 +1,25 @@
+server:
+  port: 3302
+management:
+  endpoint:
+    shutdown:
+      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+eureka:
+  client:
+    serviceUrl:
+      register-with-eureka: true
+      fetch-registry: true
+      defaultZone: http://test:123456@localhost:3000/eureka/
+  instance:
+    preferIpAddress: true
+    
+data:
+  env: NaN
+  user:
+    username: NaN
+    password: NaN
